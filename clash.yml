@@ -1,0 +1,166 @@
+port: 1050
+socks-port: 1080
+allow-lan: true
+mode: Rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+
+proxies:
+  - {name: Finland 🇫🇮, server: 185.212.149.9, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: France 🇫🇷, server: 185.128.25.150, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Germany 🇩🇪 1, server: 193.108.118.170, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Germany 🇩🇪 2, server: 178.128.194.177, port: 8388, type: ss, cipher: aes-128-cfb, password: zDXl23dlNqvgCQy3Bt22brwe5w4}
+  - {name: Germany 🇩🇪 3, server: 93.90.203.42, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Germany 🇩🇪 4, server: 193.108.118.140, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Germany 🇩🇪 5, server: 104.248.24.101, port: 8388, type: ss, cipher: aes-128-cfb, password: zDXl23dlNqvgCQy3Bt22brwe5w4}
+  - {name: Hong Kong 🇭🇰, server: 209.58.188.157, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: Ireland 🇮🇪, server: 84.247.48.142, port: 705, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Japan 🇯🇵, server: 45.85.0.103, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: Netherlands 🇳🇱, server: 104.224.144.71, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: Lm7DjPwcgV2F}
+  - {name: Taiwan 🇹🇼, server: ssr01.ddns.me, port: 25002, type: ss, cipher: xchacha20, password: gash5170}
+  - {name: United Kingdom 🇬🇧 1, server: 92.223.59.241, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United Kingdom 🇬🇧 2, server: 92.223.59.226, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United Kingdom 🇬🇧 3, server: 92.223.59.231, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United Kingdom 🇬🇧 4, server: 92.223.59.220, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United Kingdom 🇬🇧 5, server: 5.188.5.80, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 1, server: 37.218.241.120, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: FfXS27UFGqBF}
+  - {name: United States 🇺🇸 2, server: 104.224.150.193, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: 5oGwzSN1lzI2}
+  - {name: United States 🇺🇸 3, server: 104.224.151.147, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: IjdDRNpeEcEq}
+  - {name: United States 🇺🇸 4, server: 37.218.241.43, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: yhfQC9M2bcAl}
+  - {name: United States 🇺🇸 5, server: 103.124.104.187, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 6, server: 104.224.141.225, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: AFU5HtqSajyI}
+  - {name: United States 🇺🇸 7, server: 104.224.141.225, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: CfoR1yRJprop}
+  - {name: United States 🇺🇸 8, server: 37.218.241.126, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: KCyOTBSKdcFY}
+  - {name: United States 🇺🇸 9, server: 37.218.241.119, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: LG8l0Kh8Gu7p}
+  - {name: United States 🇺🇸 10, server: 45.78.66.108, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: myGrUy63LiES}
+  - {name: United States 🇺🇸 11, server: 38.91.107.225, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 12, server: 38.95.109.250, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 13, server: 37.218.241.125, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: On6amngvTjUk}
+  - {name: United States 🇺🇸 14, server: 37.218.241.125, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: 0sOEoBuEtKUD}
+  - {name: United States 🇺🇸 15, server: 37.218.241.125, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: LAAxhI2Ykxp6}
+  - {name: United States 🇺🇸 16, server: 104.224.141.225, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: bSdsFZtHhbAl}
+  - {name: United States 🇺🇸 17, server: 38.132.103.74, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 18, server: 104.224.151.43, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: qQKT8psV5xus}
+  - {name: United States 🇺🇸 19, server: 104.224.141.225, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: boDsItMJ2K6b}
+  - {name: United States 🇺🇸 20, server: 162.251.61.221, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 21, server: 38.68.134.163, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 22, server: 37.218.241.120, port: 700, type: ss, cipher: chacha20-ietf-poly1305, password: hFCvjY5pzRe6}
+  - {name: United States 🇺🇸 23, server: 185.239.173.194, port: 712, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+  - {name: United States 🇺🇸 24, server: 92.38.149.94, port: 704, type: ss, cipher: chacha20-ietf-poly1305, password: s7x3}
+proxy-groups:
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+      - Finland 🇫🇮
+      - France 🇫🇷
+      - Germany 🇩🇪 1
+      - Germany 🇩🇪 2
+      - Germany 🇩🇪 3
+      - Germany 🇩🇪 4
+      - Germany 🇩🇪 5
+      - Hong Kong 🇭🇰
+      - Ireland 🇮🇪
+      - Japan 🇯🇵
+      - Netherlands 🇳🇱
+      - Taiwan 🇹🇼
+      - United Kingdom 🇬🇧 1
+      - United Kingdom 🇬🇧 2
+      - United Kingdom 🇬🇧 3
+      - United Kingdom 🇬🇧 4
+      - United Kingdom 🇬🇧 5
+      - United States 🇺🇸 1
+      - United States 🇺🇸 2
+      - United States 🇺🇸 3
+      - United States 🇺🇸 4
+      - United States 🇺🇸 5
+      - United States 🇺🇸 6
+      - United States 🇺🇸 7
+      - United States 🇺🇸 8
+      - United States 🇺🇸 9
+      - United States 🇺🇸 10
+      - United States 🇺🇸 11
+      - United States 🇺🇸 12
+      - United States 🇺🇸 13
+      - United States 🇺🇸 14
+      - United States 🇺🇸 15
+      - United States 🇺🇸 16
+      - United States 🇺🇸 17
+      - United States 🇺🇸 18
+      - United States 🇺🇸 19
+      - United States 🇺🇸 20
+      - United States 🇺🇸 21
+      - United States 🇺🇸 22
+      - United States 🇺🇸 23
+      - United States 🇺🇸 24
+
+  - name: ✅ Direct
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🚫 Intercept
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: 🔥 Auto
+    type: url-test
+    proxies:
+      - Finland 🇫🇮
+      - France 🇫🇷
+      - Germany 🇩🇪 1
+      - Germany 🇩🇪 2
+      - Germany 🇩🇪 3
+      - Germany 🇩🇪 4
+      - Germany 🇩🇪 5
+      - Hong Kong 🇭🇰
+      - Ireland 🇮🇪
+      - Japan 🇯🇵
+      - Netherlands 🇳🇱
+      - Taiwan 🇹🇼
+      - United Kingdom 🇬🇧 1
+      - United Kingdom 🇬🇧 2
+      - United Kingdom 🇬🇧 3
+      - United Kingdom 🇬🇧 4
+      - United Kingdom 🇬🇧 5
+      - United States 🇺🇸 1
+      - United States 🇺🇸 2
+      - United States 🇺🇸 3
+      - United States 🇺🇸 4
+      - United States 🇺🇸 5
+      - United States 🇺🇸 6
+      - United States 🇺🇸 7
+      - United States 🇺🇸 8
+      - United States 🇺🇸 9
+      - United States 🇺🇸 10
+      - United States 🇺🇸 11
+      - United States 🇺🇸 12
+      - United States 🇺🇸 13
+      - United States 🇺🇸 14
+      - United States 🇺🇸 15
+      - United States 🇺🇸 16
+      - United States 🇺🇸 17
+      - United States 🇺🇸 18
+      - United States 🇺🇸 19
+      - United States 🇺🇸 20
+      - United States 🇺🇸 21
+      - United States 🇺🇸 22
+      - United States 🇺🇸 23
+      - United States 🇺🇸 24
+
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+rules:
+  - DOMAIN-SUFFIX,local,✅ Direct
+  - DOMAIN-SUFFIX,google.com,🔰 Select
+  - DOMAIN-KEYWORD,google,🔰 Select
+  - DOMAIN,google.com,🔰 Select
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,,🔰 Select,dns-failed

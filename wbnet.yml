@@ -1,0 +1,55 @@
+port: 1050
+socks-port: 1080
+allow-lan: true
+mode: Rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+experimental:
+  ignore-resolve-fail: true
+  # interface-name: en0
+
+proxies:
+  - {name: CloudFlare1, server: 1.1.1.7, port: 443, type: ss, cipher: aes-128-gcm, password: bUXqEedAOElk, plugin: v2ray-plugin, plugin-opts: { mode: websocket , tls: true ,host : v6.lordmoviez.xyz , path : / , mux : 16 }}
+  - {name: CloudFlare2, server: cloudflare.com, port: 443, type: ss, cipher: aes-128-gcm, password: bUXqEedAOElk, plugin: v2ray-plugin, plugin-opts: { mode: websocket , tls: true ,host : club1.cryptostart.online , path : //dasdsadsadsadsadasdewqeqwe , mux : 32 }}
+  - {name: ElectronProxy, type: vmess, server: llajv.rebldp.tech, port: 443, uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: { Host: llajv.rebldp.tech }}
+
+proxy-groups:
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+      - ElectronProxy
+      - CloudFlare1
+      - CloudFlare2
+
+  - name: ✅ Direct
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🚫 Intercept
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: 🔥 Auto
+    type: url-test
+    proxies:
+      - ElectronProxy
+      - CloudFlare1
+      - CloudFlare2
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🔰 Select
+  - DOMAIN-KEYWORD,google,🔰 Select
+  - DOMAIN,google.com,🔰 Select
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,🔰 Select
